@@ -14,7 +14,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"siteId\":\"\",\r\n    \"reservoirId\":\"\",\r\n    \"name\":\"\",\r\n    \"code\":\"\"\r\n}",
+          "raw": "{\r\n    \"siteId\":\"\",\r\n    \"reservoirId\":\"\",\r\n    \"municipalityId\":\"65c22782ca02a3a895172197\",\r\n    \"code\":\"\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -22,9 +22,9 @@
           }
         },
         "url": {
-          "raw": "http://192.162.70.103:5002/system/reservoir/get",
+          "raw": "http://185.98.137.199:5002/system/reservoir/get",
           "protocol": "http",
-          "host": ["192", "162", "70", "103"],
+          "host": ["185", "98", "137", "199"],
           "port": "5002",
           "path": ["system", "reservoir", "get"]
         }
@@ -129,6 +129,21 @@
           "host": ["185", "98", "137", "199"],
           "port": "5002",
           "path": ["system", "history", "get"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Sites ADE",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://185.98.137.199:5002/system/site/get",
+          "protocol": "http",
+          "host": ["185", "98", "137", "199"],
+          "port": "5002",
+          "path": ["system", "site", "get"]
         }
       },
       "response": []
