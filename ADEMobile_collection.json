@@ -1,152 +1,131 @@
 {
-  "info": {
-    "_postman_id": "443d50b1-3944-42fd-ac12-7e5ac1378f15",
-    "name": "ADE Mobile",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "18288080",
-    "_collection_link": "https://warped-zodiac-575906.postman.co/workspace/sites~da2e30c9-2a66-4db7-8ea6-47e24e75ff59/collection/18288080-443d50b1-3944-42fd-ac12-7e5ac1378f15?action=share&source=collection_link&creator=18288080"
-  },
-  "item": [
-    {
-      "name": "get All Rerservoirs",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n    \"siteId\":\"\",\r\n    \"reservoirId\":\"\",\r\n    \"municipalityId\":\"65c22782ca02a3a895172197\",\r\n    \"code\":\"\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://185.98.137.199:5002/system/reservoir/get",
-          "protocol": "http",
-          "host": ["185", "98", "137", "199"],
-          "port": "5002",
-          "path": ["system", "reservoir", "get"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "login ADE",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "\r\n{\r\n    \"email\":\"admin@admin.com\",\r\n    \"password\":\"11111111\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://185.98.137.199:5002/auth/system/login",
-          "protocol": "http",
-          "host": ["185", "98", "137", "199"],
-          "port": "5002",
-          "path": ["auth", "system", "login"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "cities ADE",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n    \"wilaya_name_ascii\": \"Adrar\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://185.98.137.199:5002/system/cities/get",
-          "protocol": "http",
-          "host": ["185", "98", "137", "199"],
-          "port": "5002",
-          "path": ["system", "cities", "get"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "devices ADE",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": {
-          "raw": "http://185.98.137.199:5002/system/devices/get",
-          "protocol": "http",
-          "host": ["185", "98", "137", "199"],
-          "port": "5002",
-          "path": ["system", "devices", "get"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Dashboard1",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": {
-          "raw": "http://185.98.137.199:5002/system/dashboard/dashboard11",
-          "protocol": "http",
-          "host": ["185", "98", "137", "199"],
-          "port": "5002",
-          "path": ["system", "dashboard", "dashboard11"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "history",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n    \"dateFrom\":\"2024-07-17\",\r\n    \"dateTo\":\"2024-07-24\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://185.98.137.199:5002/system/history/get",
-          "protocol": "http",
-          "host": ["185", "98", "137", "199"],
-          "port": "5002",
-          "path": ["system", "history", "get"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "GET Sites ADE",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": {
-          "raw": "http://185.98.137.199:5002/system/site/get",
-          "protocol": "http",
-          "host": ["185", "98", "137", "199"],
-          "port": "5002",
-          "path": ["system", "site", "get"]
-        }
-      },
-      "response": []
-    }
-  ]
+	"info": {
+		"_postman_id": "c02de5c4-277a-456b-9e13-b2760f9f29f6",
+		"name": "Maintenance Mobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18288080",
+		"_collection_link": "https://warped-zodiac-575906.postman.co/workspace/sites~da2e30c9-2a66-4db7-8ea6-47e24e75ff59/collection/18288080-c02de5c4-277a-456b-9e13-b2760f9f29f6?action=share&source=collection_link&creator=18288080"
+	},
+	"item": [
+		{
+			"name": "get Motors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"assetId\":\"666317a75725fa05fcf38afe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/system/motor/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"system",
+						"motor",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Machines(assets)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"siteId\":\"\",\r\n   \"name\":\"\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/system/asset/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"system",
+						"asset",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch History",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdAt\":{\r\n        \"$gte\":\"2024-07-31 12:00\"\r\n    }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/system/history/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"system",
+						"history",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Devices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"motorId\":\"66aab17527b001db4bf22c3e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/system/device/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"system",
+						"device",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
