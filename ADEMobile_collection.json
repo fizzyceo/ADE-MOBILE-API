@@ -147,6 +147,54 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "Notif Create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\r\n    \"title\":\"test1\",\r\n    \"description\":\"descp1\",\r\n    \"isRead\":true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://185.98.137.199:5002/system/notification/create",
+          "protocol": "http",
+          "host": ["185", "98", "137", "199"],
+          "port": "5002",
+          "path": ["system", "notification", "create"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get Notifs",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\r\n    \"dateFrom\":\"2024-08-14\",\r\n    \"dateTo\":\"2024-08-16\"\r\n    \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://185.98.137.199:5002/system/notification/get",
+          "protocol": "http",
+          "host": ["185", "98", "137", "199"],
+          "port": "5002",
+          "path": ["system", "notification", "get"]
+        }
+      },
+      "response": []
     }
   ]
 }
