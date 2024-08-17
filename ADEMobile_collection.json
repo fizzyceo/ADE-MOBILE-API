@@ -155,7 +155,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"reservoirName\":\"Meftah Saf Saf\",\r\n    \"currentLevel\":17.8,\r\n    \"type\":\"emptied\",\r\n    \"isRead\":false\r\n    }",
+          "raw": "{\r\n  \"reservoirName\":\"test\",\r\n  \"location\":\"test, test\",\r\n  \"isRead\":false,\r\n  \"type\":\"emptied\",\r\n  \"currentLevel\":14.15\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -179,7 +179,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n\r\n    \"dateFrom\":\"2024-08-14\",\r\n    \"dateTo\":\"2024-08-16\"\r\n    \r\n}",
+          "raw": "{\r\n\r\n    \"dateFrom\":\"2024-08-14\",\r\n    \"dateTo\":\"2024-08-18\",\r\n    \"isRead\":false\r\n    \r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -211,11 +211,16 @@
           }
         },
         "url": {
-          "raw": "http://185.98.137.199:5002/system/notification/6572449776a1179bc44770df",
+          "raw": "http://185.98.137.199:5002/system/notification/update/66c0b7be4b681aacddba2a9c",
           "protocol": "http",
           "host": ["185", "98", "137", "199"],
           "port": "5002",
-          "path": ["system", "notification", "6572449776a1179bc44770df"]
+          "path": [
+            "system",
+            "notification",
+            "update",
+            "66c0b7be4b681aacddba2a9c"
+          ]
         }
       },
       "response": []
