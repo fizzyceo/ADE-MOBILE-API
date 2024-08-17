@@ -155,7 +155,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n\r\n    \"title\":\"test1\",\r\n    \"description\":\"descp1\",\r\n    \"isRead\":true\r\n}",
+          "raw": "{\r\n    \"reservoirName\":\"Meftah Saf Saf\",\r\n    \"currentLevel\":17.8,\r\n    \"type\":\"emptied\",\r\n    \"isRead\":false\r\n    }",
           "options": {
             "raw": {
               "language": "json"
@@ -192,6 +192,30 @@
           "host": ["185", "98", "137", "199"],
           "port": "5002",
           "path": ["system", "notification", "get"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update Notif",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"isRead\":true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://185.98.137.199:5002/system/notification/6572449776a1179bc44770df",
+          "protocol": "http",
+          "host": ["185", "98", "137", "199"],
+          "port": "5002",
+          "path": ["system", "notification", "6572449776a1179bc44770df"]
         }
       },
       "response": []
